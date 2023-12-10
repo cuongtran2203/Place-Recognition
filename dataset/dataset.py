@@ -1,6 +1,5 @@
 import os
 from torch.utils.data import Dataset
-import logging
 import numpy as np
 import scipy.io
 from sklearn.neighbors import NearestNeighbors

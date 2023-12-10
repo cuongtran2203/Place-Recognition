@@ -4,8 +4,8 @@ import torchvision
 
 train_transform = A.Compose([
     A.Resize(512, 512),
-    # A.Normalize(mean=(0.485, 0.455, 0.406), std=(0.229, 0.224, 0.225)),
-    # ToTensorV2()
+    A.Normalize(mean=(0.485, 0.455, 0.406), std=(0.229, 0.224, 0.225)),
+    ToTensorV2()
 ])
 
 val_transform = A.Compose([
